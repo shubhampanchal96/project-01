@@ -1,0 +1,69 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-BoldItalic;}
+{\colortbl;\red255\green255\blue255;\red128\green128\blue128;\red204\green108\blue29;\red217\green232\blue247;
+\red230\green230\blue250;\red18\green144\blue195;\red249\green250\blue244;\red30\green181\blue64;\red121\green171\blue255;
+\red242\green242\blue0;\red167\green236\blue33;\red141\green218\blue248;\red23\green198\blue163;\red243\green236\blue121;
+\red104\green151\blue187;}
+{\*\expandedcolortbl;;\csgenericrgb\c50196\c50196\c50196;\csgenericrgb\c80000\c42353\c11373;\csgenericrgb\c85098\c90980\c96863;
+\csgenericrgb\c90196\c90196\c98039;\csgenericrgb\c7059\c56471\c76471;\csgenericrgb\c97647\c98039\c95686;\csgenericrgb\c11765\c70980\c25098;\csgenericrgb\c47451\c67059\c100000;
+\csgenericrgb\c94902\c94902\c0;\csgenericrgb\c65490\c92549\c12941;\csgenericrgb\c55294\c85490\c97255;\csgenericrgb\c9020\c77647\c63922;\csgenericrgb\c95294\c92549\c47451;
+\csgenericrgb\c40784\c59216\c73333;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf2 /*Q 12  \ul wap\ulnone  to ask product name and price of product from user and calculate discount i.e \cf0 \
+\cf2 if price > 2000 then discount is 10 percent of price \cf0 \
+\cf2 else discount is 7 % of price */\cf0 \
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 package\cf4  Day2\cf5 ;\cf0 \
+\
+\cf3 import\cf4  java\cf5 .\cf4 util\cf5 .\cf4 Scanner\cf5 ;\cf0 \
+\
+\cf3 public\cf4  \cf3 class\cf4  \cf6 Discount\cf4  \cf7 \{\cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf4 	\cf3 public\cf4  \cf3 static\cf4  \cf3 void\cf4  \cf8 main\cf7 (\cf6 String\cf7 []\cf4  \cf9 args\cf7 )\cf4  \cf7 \{\cf0 \
+\cf4 		\cf6 String\cf4  \cf10 \ul \ulc10 name\cf5 \ulnone ;\cf0 \
+\cf4 		\cf3 float\cf4  \cf10 price\cf5 ,\cf10 discount\cf5 ;\cf0 \
+\cf4 		\cf0 \
+\cf4 		\cf6 Scanner\cf4  \cf10 \ul \ulc10 s\cf5 \ulnone =\cf3 new\cf4  \cf11 Scanner\cf7 (\cf6 System\cf5 .
+\f1\i\b \cf12 in
+\f0\i0\b0 \cf7 )\cf5 ;\cf0 \
+\cf4 		\cf0 \
+\cf4 		\cf0 \
+\cf4 		\cf6 System\cf5 .
+\f1\i\b \cf12 out
+\f0\i0\b0 \cf5 .\cf11 println\cf7 (\cf13 "product name="\cf7 )\cf5 ;\cf0 \
+\cf4 		\cf14 name\cf4  \cf5 =\cf14 s\cf5 .\cf11 nextLine\cf7 ()\cf5 ;\cf0 \
+\cf4 		\cf0 \
+\cf4 		\cf0 \
+\cf4 		\cf6 System\cf5 .
+\f1\i\b \cf12 out
+\f0\i0\b0 \cf5 .\cf11 println\cf7 (\cf13 "product price="\cf7 )\cf5 ;\cf0 \
+\cf4 		\cf14 price\cf4  \cf5 =\cf14 s\cf5 .\cf11 nextFloat\cf7 ()\cf5 ;\cf0 \
+\cf4 		\cf0 \
+\cf4 		\cf3 if\cf7 (\cf14 price\cf5 >\cf15 2000\cf7 )\cf4  \cf7 \{\cf0 \
+\cf4 			\cf14 discount\cf5 =\cf14 price\cf5 *\cf7 (\cf15 0.1f\cf7 )\cf5 ;\cf0 \
+\cf4 			\cf6 System\cf5 .
+\f1\i\b \cf12 out
+\f0\i0\b0 \cf5 .\cf11 println\cf7 (\cf13 "discounted price="\cf5 +\cf7 (\cf14 price\cf5 -\cf14 discount\cf7 ))\cf5 ;\cf0 \
+\cf4 		\cf7 \}\cf0 \
+\cf4 		\cf0 \
+\cf4 		\cf3 else\cf0 \
+\cf4 			\cf14 discount\cf5 =\cf14 price\cf5 *\cf7 (\cf15 0.07f\cf7 )\cf5 ;\cf0 \
+\cf4 			\cf6 System\cf5 .
+\f1\i\b \cf12 out
+\f0\i0\b0 \cf5 .\cf11 println\cf7 (\cf13 "discounted price="\cf5 +\cf7 (\cf14 price\cf5 -\cf14 discount\cf7 ))\cf5 ;\cf0 \
+\cf4 		\cf0 \
+\cf4 		\cf0 \
+\
+\cf4 	\cf7 \}\cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf7 \}\cf0 \
+}
